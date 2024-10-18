@@ -11,7 +11,7 @@ function About() {
         <h1 className="about-title">Sobre Mim</h1>
       </div>
       <p className="about-bio">
-        Sou Leonardo Fragoso, Desenvolvedor Full Stack com foco em backend usando Python, Django e Flask. 
+        Sou Leonardo Fragoso, Desenvolvedor Full Stack com foco em back-end usando Python, Django e Flask. 
         Tenho uma forte base em infraestrutura de TI e especialização em soluções seguras e escaláveis. 
         Além disso, tenho experiência com front-end utilizando React e frameworks modernos.
       </p>
