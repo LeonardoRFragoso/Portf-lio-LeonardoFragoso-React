@@ -1,50 +1,52 @@
 // components/About.js
 import React from 'react';
-import styled from 'styled-components';
-
-const AboutContainer = styled.div`
-  padding: 2rem;
-  text-align: center;
-`;
-
-const Title = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-`;
-
-const Bio = styled.p`
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-`;
-
-const Skills = styled.ul`
-  list-style: none;
-  padding: 0;
-`;
-
-const Skill = styled.li`
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-`;
+import './About.css'; // Importando o CSS para a página About
+import profilePic from '../assets/Img/profile.png';
 
 function About() {
   return (
-    <AboutContainer>
-      <Title>Sobre Mim</Title>
-      <Bio>
+    <div className="about-container">
+      <div className="about-header">
+        <img src={profilePic} alt="Leonardo Fragoso" className="about-img" />
+        <h1 className="about-title">Sobre Mim</h1>
+      </div>
+      <p className="about-bio">
         Sou Leonardo Fragoso, Desenvolvedor Full Stack com foco em backend usando Python, Django e Flask. 
         Tenho uma forte base em infraestrutura de TI e especialização em soluções seguras e escaláveis. 
         Além disso, tenho experiência com front-end utilizando React e frameworks modernos.
-      </Bio>
-      <Title>Competências</Title>
-      <Skills>
-        <Skill>✔ Python (Django, Flask)</Skill>
-        <Skill>✔ React & Node.js</Skill>
-        <Skill>✔ Criação e integração de APIs RESTful</Skill>
-        <Skill>✔ Automação com Selenium e Puppeteer</Skill>
-        <Skill>✔ Testes automatizados e desenvolvimento ágil</Skill>
-      </Skills>
-    </AboutContainer>
+      </p>
+      <h1 className="about-title">Competências</h1>
+      <ul className="skills-list">
+        <li className="skill-item">
+          <span>Python (Django, Flask)</span>
+          <div className="progress-bar"><div className="progress-fill" style={{ width: '90%' }}></div></div>
+        </li>
+        <li className="skill-item">
+          <span>React & Node.js</span>
+          <div className="progress-bar"><div className="progress-fill" style={{ width: '85%' }}></div></div>
+        </li>
+        <li className="skill-item">
+          <span>Criação e integração de APIs RESTful</span>
+          <div className="progress-bar"><div className="progress-fill" style={{ width: '80%' }}></div></div>
+        </li>
+        <li className="skill-item">
+          <span>Automação com Selenium e Puppeteer</span>
+          <div className="progress-bar"><div className="progress-fill" style={{ width: '70%' }}></div></div>
+        </li>
+        <li className="skill-item">
+          <span>Testes automatizados e desenvolvimento ágil</span>
+          <div className="progress-bar"><div className="progress-fill" style={{ width: '75%' }}></div></div>
+        </li>
+      </ul>
+      {/* Botões de Ação */}
+      <div className="cta-buttons">
+        <a href="https://linkedin.com/in/leonardofragoso" className="cta-button">Ver LinkedIn</a>
+        <a href="mailto:contato@leonardofragoso.com" className="cta-button">Entre em Contato</a>
+        <a href="/CV%20Leonardo.pdf" className="cta-button download" download>
+          Baixar Currículo
+        </a>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,177 @@
+/* about.css */
+
+/* Container Principal */
+.about-container {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #1e1e2f;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Cabeçalho com imagem de perfil */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Imagem de perfil */
+.about-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #f97316;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05) rotate(5deg); /* Melhoria: rotação ao passar o mouse */
+}
+
+/* Título principal */
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: #f97316;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
+}
+
+/* Bio ou descrição pessoal */
+.about-bio {
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards 0.5s;
+}
+
+/* Lista de Competências */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards 1.5s;
+}
+
+/* Estilo de cada item de competência */
+.skill-item {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .progress-fill {
+  width: 100%; /* Melhoria: preenchimento total ao passar o mouse */
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 80%;
+  background-color: #333;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #f97316;
+  width: 0;
+  transition: width 2s ease-in-out; /* Melhoria: transição mais suave */
+}
+
+/* Botões de Ação */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background-color: #f97316;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: scale(1.08); /* Melhoria: aumento suave */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Melhoria: sombra aumentada */
+}
+
+.cta-button.download {
+  background-color: #4c51bf;
+}
+
+.cta-button.download:hover {
+  background-color: #5a67d8;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 4rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-bio {
+    font-size: 1.3rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+}
+
+/* Animações */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
