@@ -1,0 +1,73 @@
+.navbar {
+    background: linear-gradient(135deg, #1c1c28 0%, #23232e 100%); /* Fundo com gradiente */
+    padding: 20px 2rem; /* Ajuste no padding para maior espaçamento vertical */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para criar profundidade */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: padding 0.3s ease-in-out; /* Transição suave para o padding */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif; /* Melhorando a tipografia */
+}
+
+.navbar-logo:hover {
+    color: #f97316;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem; /* Mais espaçamento entre os itens */
+}
+
+.nav-item .nav-links {
+    color: #e0e0e0;
+    font-size: 1.3rem; /* Aumentando ligeiramente o tamanho da fonte */
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out; /* Suave transição ao hover */
+    border-bottom: 2px solid transparent; /* Adicionando sublinhado invisível */
+    font-family: 'Poppins', sans-serif; /* Melhorando a tipografia */
+}
+
+.nav-item .nav-links:hover {
+    color: #f97316;
+    border-bottom: 2px solid #f97316; /* Sublinhado visível ao hover */
+}
+
+/* Indicação da página ativa */
+.nav-item .nav-links.active {
+    color: #f97316;
+    border-bottom: 2px solid #f97316; /* Subtilinhado na página ativa */
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+}
