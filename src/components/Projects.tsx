@@ -32,7 +32,7 @@ export default function Projects() {
       github: "https://github.com/LeonardoRFragoso/SiteConvert"
     },
     {
-      title: "Sitema criado para Andaimes Pini ( React e Flask )",
+      title: "Sistema criado para Andaimes Pini ( React e Flask )",
       description: "Sistema feito sob medida para realizar locações, controlar estoque e demais funcionalidades",
       image: "/images/project5.png",
       tags: ["Flask", "React", "PostgreSQL"],
