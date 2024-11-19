@@ -6,42 +6,42 @@ export default function Projects() {
     {
       title: "Projeto React para Lions Seminovos",
       description: "Projeto Feitos para empresa Lions Seminovos utilizando React e Material-UI",
-      image: "src/assets/Img/project1.png",
+      image: "public/images/project1.png",
       tags: ["React", "Javascript", "Material-UI"],
       github: "https://github.com/LeonardoRFragoso/DesafioLionsReact"
     },
     {
       title: "Projeto React para PyScriptTech",
       description: "Projeto Feitos para empresa PyScriptTech utilizando React e Material-UI",
-      image: "src/assets/Img/project2.png",
+      image: "public/images/project2.png",
       tags: ["React", "Javascript", "Material-UI"],
       github: "https://github.com/LeonardoRFragoso/PyScriptTech_React"
     },
     {
       title: "API REST com Flask",
       description: "API REST simples desenvolvida com Flask e PostgreSQL para gerenciamento de tickets de TI.",
-      image: "src/assets/Img/project3.png",
+      image: "public/images/project3.png",
       tags: ["Flask", "REST API", "PostgreSQL"],
       github: "https://github.com/LeonardoRFragoso/TicketsTI-Flask"
     },
     {
       title: "Site Flask e React",
       description: "Site para Conversão de Arquivos com Flask e React",
-      image: "src/assets/Img/project4.png",
+      image: "public/images/project4.png",
       tags: ["Flask", "React", "PostgreSQL"],
       github: "https://github.com/LeonardoRFragoso/SiteConvert"
     },
     {
       title: "Sitema criado para Andaimes Pini ( React e Flask )",
       description: "Sistema feito sob medida para realizar locações, controlar estoque e demais funcionalidades",
-      image: "src/assets/Img/project5.png",
+      image: "public/images/project5.png",
       tags: ["Flask", "React", "PostgreSQL"],
       github: "https://github.com/LeonardoRFragoso/AndaimesPini_Project"
     },
     {
       title: "API com Flask e Streamlit.",
       description: "API com Flask e Streamlit para analise de Ações e FIIS.",
-      image: "src/assets/Img/project6.png",
+      image: "public/images/project6.png",
       tags: ["Flask", "Streamlit", "PostgreSQL"],
       github: "https://github.com/LeonardoRFragoso/API_Analyze"
     }
