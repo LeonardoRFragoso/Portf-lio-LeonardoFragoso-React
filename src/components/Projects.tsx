@@ -4,25 +4,25 @@ import { Github, ExternalLink } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
-      title: "Análise de Dados com Python",
-      description: "Projeto pessoal de análise de dados utilizando Pandas e Matplotlib para visualização.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-      tags: ["Python", "Pandas", "Data Analysis"],
-      github: "https://github.com/LeonardoRFragoso"
+      title: "Projeto React para Lions Seminovos",
+      description: "Projeto Feitos para empresa Lions Seminovos utilizando React e Material-UI",
+      image: "src/assets/Img/project1.png",
+      tags: ["React", "Javascript", "Material-UI"],
+      github: "https://github.com/LeonardoRFragoso/DesafioLionsReact"
     },
     {
-      title: "Blog com Django",
-      description: "Blog desenvolvido com Django, demonstrando conhecimentos em desenvolvimento web.",
-      image: "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&q=80&w=800",
-      tags: ["Django", "Python", "Web"],
-      github: "https://github.com/LeonardoRFragoso"
+      title: "Projeto React para PyScriptTech",
+      description: "Projeto Feitos para empresa PyScriptTech utilizando React e Material-UI",
+      image: "src/assets/Img/project2.png",
+      tags: ["React", "Javascript", "Material-UI"],
+      github: "https://github.com/LeonardoRFragoso/PyScriptTech_React"
     },
     {
       title: "API REST com Flask",
-      description: "API REST simples desenvolvida com Flask e SQLite para gerenciamento de tarefas.",
-      image: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?auto=format&fit=crop&q=80&w=800",
-      tags: ["Flask", "REST API", "SQLite"],
-      github: "https://github.com/LeonardoRFragoso"
+      description: "API REST simples desenvolvida com Flask e PostgreSQL para gerenciamento de tickets de TI.",
+      image: "src/assets/Img/project3.png",
+      tags: ["Flask", "REST API", "PostgreSQL"],
+      github: "https://github.com/LeonardoRFragoso/TicketsTI-Flask"
     }
   ];
 

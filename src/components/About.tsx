@@ -3,20 +3,51 @@ import { Code2, Database, Globe, Server, BookOpen } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { icon: <Code2 className="h-6 w-6" />, name: 'Python', description: 'Django, Flask, Pandas' },
+    { icon: <Code2 className="h-6 w-6" />, name: 'Python', description: 'Django, Flask, Pandas, Selenium, Streamlit' },
     { icon: <Database className="h-6 w-6" />, name: 'Databases', description: 'PostgreSQL, SQLite' },
-    { icon: <Globe className="h-6 w-6" />, name: 'Web', description: 'HTML, CSS, JavaScript' },
+    { icon: <Globe className="h-6 w-6" />, name: 'Web', description: 'HTML, CSS, JavaScript, React' },
     { icon: <Server className="h-6 w-6" />, name: 'Tools', description: 'Git, Docker Basics' },
   ];
 
   const education = [
     {
       icon: <BookOpen className="h-6 w-6" />,
-      degree: "Análise e Desenvolvimento de Sistemas",
-      institution: "FIAP",
-      year: "2018"
+      degree: "Gestão de Tecnologia da Informação",
+      institution: "Estácio de Sá",
+      year: "2016 - 2019"
+    },
+    {
+      icon: <BookOpen className="h-6 w-6" />,
+      degree: "Formação Python",
+      institution: "Rocketseat",
+      year: "abr 2024 - ago 2024"
+    },
+    {
+      icon: <BookOpen className="h-6 w-6" />,
+      degree: "Formação Full Stack",
+      institution: "Rocketseat",
+      year: "jun 2024 - set 2024"
+    },
+    {
+      icon: <BookOpen className="h-6 w-6" />,
+      degree: "Django Master",
+      institution: "PyCode",
+      year: "abr 2024 - set 2024"
+    },
+    {
+      icon: <BookOpen className="h-6 w-6" />,
+      degree: "Formação Explorer",
+      institution: "Rocketseat",
+      year: "abr 2024 - jul 2024"
+    },
+    {
+      icon: <BookOpen className="h-6 w-6" />,
+      degree: "Analista de Dados",
+      institution: "Cubos Academy",
+      year: "jan 2024 - set 2024"
     }
   ];
+  
 
   return (
     <section id="about" className="py-20 bg-slate-800">
