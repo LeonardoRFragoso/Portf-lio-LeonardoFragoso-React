@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "Projeto React para Lions Seminovos",
       description: "Projeto Feitos para empresa Lions Seminovos utilizando React e Material-UI",
-      image: "src/assets/Img/project1.png",
+      image: "https://drive.google.com/file/d/1FJRfBhHGluoqwP6bJbY4pM9fT3P9dHBK/view?usp=drive_link",
       tags: ["React", "Javascript", "Material-UI"],
       github: "https://github.com/LeonardoRFragoso/DesafioLionsReact"
     },
